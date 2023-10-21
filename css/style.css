@@ -185,7 +185,7 @@ section {
 }
 .header__title-img {
   position: relative;
-  width: 180px;
+  width: 240px;
   margin: 0 auto;
   margin-bottom: 10px;
 }
@@ -209,11 +209,22 @@ section {
   box-shadow: 1px 1px 1px #80967138, 2px 2px 2px #8096711b;
 }
 .header__item:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .green-link {
   background-color: #809671;
   color: #f7f7f5;
+}
+
+@media (max-width: 767px) {
+  .header__pre-title {
+    font-size: 18px;
+    margin-top: 6px;
+  }
+  .header__post-title {
+    font-size: 16px;
+    margin-top: 8px;
+  }
 }
 
 @media (min-width: 530px) {
@@ -255,37 +266,65 @@ section {
 
 /* about-me */
 .about-me {
-  background-image: url(../img/fons/IMG_9578.JPG);
+  background-image: url(../img/fons/new\ 2.PNG);
   padding-top: 10px;
   /* background-repeat: repeat; */
   background-size: cover;
+  padding-bottom: 30px;
 }
 
 .about-me__photo {
   margin-bottom: 10px;
 }
-.about-me__title-img {
-  width: 200px;
+/* .about-me__title-img {
+  width: 240px;
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
-}
-.about-me__text-box {
+} */
+/* .about-me__text-box {
   padding: 0 15px;
   color: #f7f7f5;
+  font-size: 18px;
 }
 .about-me__text-list {
-  padding: 10px 15px;
+  padding: 15px 15px;
 }
 .about-me__text-item {
   display: flex;
   align-items: start;
+  margin-bottom: 8px;
 }
 .about-me__text-item:last-child {
-  margin-top: 5px;
-}
+  margin-top: 8px;
+} */
 .about-me__text-item-star {
   width: 20px;
+}
+
+@media (max-width: 767px) {
+  .about-me__title-img {
+    width: 240px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .about-me__text-box {
+    padding: 0 15px;
+    color: #f7f7f5;
+    font-size: 18px;
+  }
+  .about-me__text-list {
+    padding: 15px 15px;
+  }
+  .about-me__text-item {
+    display: flex;
+    align-items: start;
+    margin-bottom: 8px;
+  }
+  .about-me__text-item:last-child {
+    margin-top: 8px;
+  }
 }
 
 @media (min-width: 767px) {
@@ -331,12 +370,16 @@ section {
 }
 
 /* about-course */
-
+.about-course {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .about-course__title-img {
-  width: 280px;
+  width: 300px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  /* margin-top: 20px; */
 }
 .about-course__list {
   padding-right: 20px;
@@ -347,9 +390,10 @@ section {
   justify-content: center;
   gap: 20px;
   align-items: center;
+  font-size: 16px;
 }
 .about-course__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 .about-course__item-number {
   width: 50px;
@@ -357,25 +401,29 @@ section {
 
 /* course-program */
 .course-program {
-  background-image: url(../img/fons/IMG_2072\ \(2\).JPG);
+  background-color: #212020;
+  background-image: url(../img/fons/new.PNG);
+  background-image: url(../img/fons/fon-flower.JPG);
   /* background-image: url(../img/fons/fon-one.JPG); */
   background-position: center;
   background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 35px;
 }
 
 .course-program__item {
   border-bottom: 1px solid #f7f7f5;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .top-line {
   border-top: 1px solid #f7f7f5;
 }
 .course-program__title-img {
   display: block;
-  width: 180px;
+  width: 220px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .course-program__triger {
   display: flex;
@@ -390,12 +438,12 @@ section {
   color: #f7f7f5;
 }
 .course-program__triger-pre-title {
-  font-size: 16px;
+  font-size: 20px;
 }
 .course-program__triger-title {
   font-family: Montserrat;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 20px;
 }
 .course-program__triger-img {
   display: block;
@@ -405,8 +453,9 @@ section {
 .course-program__content-list {
   display: none;
 
-  padding: 10px 15px;
+  padding: 15px 15px;
   color: #f7f7f5;
+  font-size: 18px;
 }
 .course-program__content-item:not(:last-child) {
   margin-bottom: 6px;
@@ -436,13 +485,14 @@ section {
 /* price */
 
 .price {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+  padding-top: 30px;
 }
 .price__title-img {
   display: block;
-  width: 96px;
+  width: 120px;
   margin: 0 auto;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .price__list {
   display: flex;
@@ -460,6 +510,7 @@ section {
   color: #f7f7f5;
   background-color: #809671;
   box-shadow: 2px 2px 2px #80967138, 4px 4px 4px #8096711b;
+  font-size: 18px;
 }
 .milk {
   background-color: #f7f7f5;
@@ -483,7 +534,7 @@ section {
 }
 .price-about__title {
   font-family: Montserrat;
-  font-size: 18px;
+  font-size: 22px;
   text-transform: uppercase;
   margin-bottom: 15px;
   text-align: center;
@@ -521,6 +572,8 @@ section {
   background-image: url(../img/fons/IMG_9578.JPG);
   background-repeat: repeat;
   background-repeat: round;
+
+  padding-top: 30px;
 }
 .question__container {
   border: 1px solid #f7f7f5;
@@ -537,11 +590,14 @@ section {
 .question__title-img {
   display: block;
   margin: 0 auto;
-  width: 110px;
-  margin-bottom: 10px;
+  width: 140px;
+  margin-bottom: 5px;
+  padding: 10px;
 }
 .question__item {
   border-top: 1px solid #f7f7f5;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .question__item:last-child {
   border-bottom: 1px solid #f7f7f5;
@@ -550,10 +606,11 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   padding-bottom: 5px;
   font-family: Montserrat;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
 }
 .question__triger-img {
@@ -565,6 +622,8 @@ section {
 
   padding-left: 10px;
   padding-bottom: 10px;
+  font-size: 20px;
+  margin-top: 10px;
 }
 .question__item.active {
   .question__triger-img {
@@ -593,12 +652,19 @@ section {
 /* footer */
 .footer__list {
   color: #f7f7f5;
-  font-size: 16px;
+  font-size: 22px;
   text-align: center;
   margin-bottom: 50px;
 }
+.footer__item {
+  border: 1px solid #f7f7f511;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
 .footer__item:not(:last-child) {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .contacts__list {
   display: flex;
